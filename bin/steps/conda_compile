@@ -7,9 +7,11 @@ if [ ! -d /app/.heroku/miniconda ]; then
     conda install pip --yes | indent
 fi
 
-conda remove my-rdkit-env
-conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
-source activate my-rdkit-env
+brew install rdkit
+
+#conda remove my-rdkit-env
+#conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
+#source activate my-rdkit-env
 
 #git clone https://github.com/rdkit/conda-rdkit.git
 #conda install conda-build
