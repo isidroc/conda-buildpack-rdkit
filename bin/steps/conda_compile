@@ -1,4 +1,4 @@
-conda remove --name my-rdkit-env --all
+#conda remove --name my-rdkit-env --all
 
 
 if [ ! -d /app/.heroku/miniconda ]; then
@@ -17,7 +17,7 @@ fi
 
 if [ -f conda-requirements.txt ]; then
     puts-step "Installing dependencies using Conda"
-    source activate my-rdkit-env
+    #source activate my-rdkit-env
     conda install --file conda-requirements.txt --yes | indent
 fi
 
