@@ -7,7 +7,7 @@ if [ ! -d /app/.heroku/miniconda ]; then
     conda install pip --yes | indent
 fi
 
-#conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
+conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
 #source activate my-rdkit-env
 
 if [ -f conda-requirements.txt ]; then
