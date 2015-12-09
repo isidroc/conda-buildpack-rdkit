@@ -1,3 +1,6 @@
+This is based on the work by kennethreitz:
+https://github.com/kennethreitz/conda-buildpack
+
 Conda Buildpack
 ===============
 
