@@ -1,4 +1,4 @@
-conda remove --name my-rdkit-env --all
+#conda remove --name my-rdkit-env --all
 
 
 if [ ! -d /app/.heroku/miniconda ]; then
