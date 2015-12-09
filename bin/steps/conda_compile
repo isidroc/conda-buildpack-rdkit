@@ -8,7 +8,11 @@ if [ ! -d /app/.heroku/miniconda ]; then
 fi
 
 #conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
-source activate my-rdkit-env
+#source activate my-rdkit-env
+
+git clone https://github.com/rdkit/conda-rdkit.git
+conda build boost
+conda build rdkit
 
 if [ -f conda-requirements.txt ]; then
     puts-step "Installing dependencies using Conda"
