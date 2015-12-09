@@ -1,5 +1,8 @@
 #conda remove --name my-rdkit-env --all
 
+    conda remove --name my-rdkit-env --all
+    conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
+    source activate my-rdkit-env
 
 if [ ! -d /app/.heroku/miniconda ]; then
     puts-step "Preparing Python/Miniconda Environment (3.5.2)"
@@ -7,9 +10,9 @@ if [ ! -d /app/.heroku/miniconda ]; then
     bash Miniconda-3.7.3-Linux-x86_64.sh  -p /app/.heroku/miniconda/ -b | indent
     rm -fr Miniconda-3.7.3-Linux-x86_64.sh
 
-    conda remove --name my-rdkit-env --all
-    conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
-    source activate my-rdkit-env
+    #conda remove --name my-rdkit-env --all
+    #conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
+    #source activate my-rdkit-env
 
     conda install pip --yes | indent
 fi
