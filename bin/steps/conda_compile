@@ -1,6 +1,6 @@
 #conda remove --name my-rdkit-env --all
 
-    conda remove --name my-rdkit-env --all
+    #conda remove --name my-rdkit-env --all
     conda install -c https://conda.anaconda.org/rdkit rdkit
     #conda create -c https://conda.anaconda.org/rdkit -n my-rdkit-env rdkit
     #source activate my-rdkit-env
